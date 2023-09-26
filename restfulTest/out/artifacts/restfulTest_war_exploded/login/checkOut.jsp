@@ -27,7 +27,8 @@
         cnt += product.getAmount();
     }
     out.println("<br> Total Price is " + total + ".");
-    out.println("<br> Total Amount is " + cnt + ". <br>");
+    out.println("<br> Total Amount is " + cnt + ".");
+    out.println("<br>");
     productList.clear();
     session.setAttribute("productList", productList);
 %>
