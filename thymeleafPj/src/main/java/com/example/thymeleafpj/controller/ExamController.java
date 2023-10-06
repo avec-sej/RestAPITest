@@ -120,4 +120,12 @@ public class ExamController {
         return mav;
     }
 
+    //Thymeleaf strings util methods
+    @RequestMapping(value = "/strings", method = RequestMethod.GET)
+    public ModelAndView viewStringUtil(ModelAndView mav){
+        mav.addObject("msg", "Hello world");
+        mav.setViewName("stringUtil");
+        return mav;
+    }
+
 }
