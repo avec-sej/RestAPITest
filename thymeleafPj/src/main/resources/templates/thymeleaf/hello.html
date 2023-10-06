@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3 th:text="Test">Thymeleaf hello.html</h3>
+    <div th:with="firstValue=${'Thymeleaf'}, secondValue=${'value2'}">
+        <h3 th:text="${firstValue}"></h3>
+        <h3 th:text="${firstValue == ''? 'this is null' : firstValue }"></h3>
+        <h3 th:text="${secondValue}"></h3>
+        <h3 th:if="${secondValue == 'value2'}" th:text="${secondValue}"></h3>
+    </div>
+</body>
+</html>
